@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+img_reader
+test_display_img
+test_load_img
