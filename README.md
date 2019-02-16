@@ -2,4 +2,4 @@
 
 Tool to display images on terminal without X server.
 
-Run make to generate bin/img_reader file.
+Run "make all" to generate bin/img_reader file.
