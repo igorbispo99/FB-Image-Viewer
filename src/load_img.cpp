@@ -91,7 +91,7 @@ int Image::load_png(std::string filename) {
     boost::gil::rgb8_image_t img;
 
     try {
-		boost::gil::png_read_and_convert_image(filename, img);
+		boost::gil::read_image(filename, img, boost::gil::png_tag());
 	} catch (std::exception &e) {
 		std::cerr << e.what() << std::endl;
 		return -1;
@@ -106,7 +106,7 @@ int Image::load_jpg(std::string filename) {
     boost::gil::rgb8_image_t img;
 
     try {
-		boost::gil::jpeg_read_and_convert_image(filename, img);
+		boost::gil::read_image(filename, img, boost::gil::jpeg_tag());
 	} catch (std::exception &e) {
 		std::cerr << e.what() << std::endl;
 		return -1;

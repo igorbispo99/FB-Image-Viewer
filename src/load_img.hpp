@@ -10,8 +10,8 @@
 #define png_infopp_NULL (png_infopp)NULL
 #define int_p_NULL (int*)NULL
 
-#include <boost/gil/extension/io/jpeg_io.hpp>
-#include <boost/gil/extension/io/png_io.hpp>
+#include <boost/gil/extension/io/jpeg.hpp>
+#include <boost/gil/extension/io/png.hpp>
 
 template <class T>
 bool element_is_on_vector(std::vector<T> v, T e){
